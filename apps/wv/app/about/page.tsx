@@ -9,14 +9,14 @@ export const metadata = {
 };
 
 const team = [
-  { name: "Stylist Name", title: "Master Stylist",  photo: "https://randomuser.me/api/portraits/men/32.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/44.jpg" },
-  { name: "Stylist Name", title: "Senior Stylist",   photo: "https://randomuser.me/api/portraits/men/65.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/71.jpg" },
-  { name: "Stylist Name", title: "Stylist",          photo: "https://randomuser.me/api/portraits/women/44.jpg" },
-  { name: "Stylist Name", title: "Master Barber",    photo: "https://randomuser.me/api/portraits/men/55.jpg" },
-  { name: "Stylist Name", title: "Stylist",          photo: "https://randomuser.me/api/portraits/women/65.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/22.jpg" },
+  { name: "Stylist Name", title: "Master Stylist",  photo: "https://randomuser.me/api/portraits/women/1.jpg" },
+  { name: "Stylist Name", title: "Senior Stylist",  photo: "https://randomuser.me/api/portraits/women/5.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "https://randomuser.me/api/portraits/women/10.jpg" },
+  { name: "Stylist Name", title: "Barber",          photo: "https://randomuser.me/api/portraits/women/17.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "https://randomuser.me/api/portraits/women/20.jpg" },
+  { name: "Stylist Name", title: "Senior Stylist",  photo: "https://randomuser.me/api/portraits/women/26.jpg" },
+  { name: "Stylist Name", title: "Master Barber",   photo: "https://randomuser.me/api/portraits/women/33.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "https://randomuser.me/api/portraits/women/44.jpg" },
 ];
 
 export default function AboutPage() {
