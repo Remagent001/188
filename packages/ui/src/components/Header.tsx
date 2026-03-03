@@ -43,13 +43,12 @@ export function Header({ site }: HeaderProps) {
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 shrink-0">
-          <span className="text-white font-bold text-2xl tracking-tight">
-            18<span className="text-[#c9a96e]">|</span>8
-          </span>
-          <span className="hidden sm:block text-white/70 text-xs uppercase tracking-widest leading-tight">
-            Fine Men's<br />Salon
-          </span>
+        <a href="/" className="flex items-center shrink-0">
+          <img
+            src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
+            alt="18|8 Fine Men's Salon"
+            className="h-10 object-contain"
+          />
         </a>
 
         {/* Desktop nav */}

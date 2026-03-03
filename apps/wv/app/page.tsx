@@ -1,10 +1,11 @@
 import { HeroSection } from "@repo/ui/components/HeroSection";
 import { ServicesOverview } from "@repo/ui/components/ServicesOverview";
 import { TeamGrid } from "@repo/ui/components/TeamGrid";
+import { VisitUsSection } from "@repo/ui/components/VisitUsSection";
 import { BookingCTA } from "@repo/ui/components/BookingCTA";
 import site from "../config/site";
 
-// Placeholder team — replace names, titles, and photos with real ones
+// Replace with real stylist names, titles, and photos when available
 const team = [
   { name: "Stylist Name", title: "Master Stylist",  photo: "https://randomuser.me/api/portraits/men/32.jpg" },
   { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/44.jpg" },
@@ -22,6 +23,7 @@ export default function HomePage() {
       <HeroSection site={site} />
       <ServicesOverview />
       <TeamGrid members={team} />
+      <VisitUsSection site={site} />
       <BookingCTA site={site} />
     </>
   );

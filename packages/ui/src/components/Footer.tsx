@@ -11,13 +11,12 @@ export function Footer({ site }: FooterProps) {
 
         {/* Brand */}
         <div className="space-y-4">
-          <div className="flex items-center gap-2">
-            <span className="text-white font-bold text-2xl">
-              18<span className="text-[#c9a96e]">|</span>8
-            </span>
-            <span className="text-white/60 text-xs uppercase tracking-widest leading-tight">
-              Fine Men's<br />Salon
-            </span>
+          <div>
+            <img
+              src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
+              alt="18|8 Fine Men's Salon"
+              className="h-12 object-contain"
+            />
           </div>
           <p className="text-sm leading-relaxed">
             A classic barbershop for the modern gentleman in {site.address.city}, {site.address.state}.
