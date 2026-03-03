@@ -19,8 +19,7 @@ const site: SiteConfig = {
     { label: "Sunday",    time: "10:00 AM – 6:00 PM" },
   ],
   booking: {
-    // TODO: Replace with Phorest booking URL from developer
-    url: "https://PLACEHOLDER-wv.phorest.com",
+    url: "https://www.phorest.com/salon/eighteeneightfinemenssalons",
   },
   social: {
     // TODO: Add Instagram, Facebook, Yelp URLs for WV location

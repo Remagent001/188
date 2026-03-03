@@ -62,7 +62,9 @@ export default function DallasSelector() {
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
               style={{
-                backgroundImage: `url('/images/${loc.id}-bg.jpg')`,
+                backgroundImage: loc.id === "wv"
+                  ? "url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1920&q=80')"
+                  : "url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=1920&q=80')",
                 backgroundColor: loc.id === "wv" ? "#1a1008" : "#0a1018",
               }}
               aria-hidden="true"

@@ -19,8 +19,8 @@ export function TeamGrid({ members }: TeamGridProps) {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {members.map((member) => (
-            <div key={member.name} className="group text-center">
+          {members.map((member, index) => (
+            <div key={index} className="group text-center">
               {/* Photo placeholder */}
               <div className="aspect-square bg-[#1a1a1a] mb-4 overflow-hidden relative">
                 {member.photo ? (

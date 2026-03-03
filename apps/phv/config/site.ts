@@ -20,8 +20,7 @@ const site: SiteConfig = {
     { label: "Sunday",    time: "Closed" },
   ],
   booking: {
-    // TODO: Replace with Phorest booking URL from developer
-    url: "https://PLACEHOLDER-phv.phorest.com",
+    url: "https://www.phorest.com/salon/eighteeneightfinemenssalons1",
   },
   social: {
     // TODO: Add Instagram, Facebook, Yelp URLs for PHV location

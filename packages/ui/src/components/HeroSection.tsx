@@ -7,10 +7,10 @@ interface HeroSectionProps {
 export function HeroSection({ site }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background image placeholder — swap with real photo */}
+      {/* Background image — replace with real salon photo when ready */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=80')" }}
         aria-hidden="true"
       />
       {/* Gradient overlay */}
