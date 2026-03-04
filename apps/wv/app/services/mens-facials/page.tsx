@@ -20,7 +20,7 @@ export default function MensFacialsPage() {
     <ServiceDetailPage
       title="Men's Facials"
       intro="Your skin deserves as much attention as your cut. Our facial treatments are formulated and delivered specifically for men — addressing the unique challenges of men's skin with results you'll actually see and feel."
-      photo="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80"
+      photo="/images/service-facials.jpg"
       services={services}
       site={site}
     />

@@ -12,7 +12,7 @@ export function VisitUsSection({ site }: VisitUsSectionProps) {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown11b-e1630035246155.jpg')",
+            "url('/images/visit-bg.jpg')",
           opacity: 0.2,
         }}
         aria-hidden="true"

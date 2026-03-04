@@ -25,7 +25,7 @@ export default function MensWaxingPage() {
     <ServiceDetailPage
       title="Men's Waxing"
       intro="The details matter. Our professional waxing services keep you looking clean, precise, and polished — targeting the areas that make the biggest difference."
-      photo="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80"
+      photo="/images/service-waxing.jpg"
       services={services}
       site={site}
     />

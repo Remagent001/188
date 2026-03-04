@@ -20,7 +20,7 @@ export default function ScalpTreatmentsPage() {
     <ServiceDetailPage
       title="Scalp Treatments"
       intro="Healthy hair starts with a healthy scalp. Our professional scalp treatments address dryness, buildup, and irritation — leaving your scalp refreshed and your hair looking its best."
-      photo="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80"
+      photo="/images/service-scalp.jpg"
       services={services}
       site={site}
     />

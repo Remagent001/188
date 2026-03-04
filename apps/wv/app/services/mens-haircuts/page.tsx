@@ -54,7 +54,7 @@ export default function MensHaircutsPage() {
   return (
     <ServiceDetailPage
       title="Men's Haircutting Services"
-      photo="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80"
+      photo="/images/service-haircuts.jpg"
       services={services}
       site={site}
     />

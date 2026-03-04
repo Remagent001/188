@@ -29,7 +29,7 @@ export default function StraightRazorShavesPage() {
   return (
     <ServiceDetailPage
       title="Straight-Razor Shaves"
-      photo="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80"
+      photo="/images/service-shaves.jpg"
       services={services}
       site={site}
     />

@@ -29,7 +29,7 @@ export default function HairColoringPage() {
   return (
     <ServiceDetailPage
       title="Hair Coloring & Blending"
-      photo="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+      photo="/images/service-hair-coloring.jpg"
       services={services}
       site={site}
     />

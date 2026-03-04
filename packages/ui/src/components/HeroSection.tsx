@@ -12,7 +12,7 @@ export function HeroSection({ site }: HeroSectionProps) {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown8b-e1630035388512.jpg')",
+            "url('/images/hero-bg.jpg')",
           opacity: 0.55,
         }}
         aria-hidden="true"

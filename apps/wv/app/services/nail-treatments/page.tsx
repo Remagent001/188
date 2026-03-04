@@ -20,7 +20,7 @@ export default function NailTreatmentsPage() {
     <ServiceDetailPage
       title="Nail Treatments"
       intro="Clean, groomed, and professional — no polish required. Our nail services are designed with the modern gentleman in mind."
-      photo="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80"
+      photo="/images/service-nails.jpg"
       services={services}
       site={site}
     />
