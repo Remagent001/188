@@ -4,7 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "predev": "node ../../scripts/copy-shared-images.js",
     "dev": "next dev --port 3000",
+    "prebuild": "node ../../scripts/copy-shared-images.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
