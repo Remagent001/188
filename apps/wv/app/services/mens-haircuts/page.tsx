@@ -54,7 +54,7 @@ export default function MensHaircutsPage() {
   return (
     <ServiceDetailPage
       title="Men's Haircutting Services"
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown8b-e1630035388512.jpg"
+      photo="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80"
       services={services}
       site={site}
     />

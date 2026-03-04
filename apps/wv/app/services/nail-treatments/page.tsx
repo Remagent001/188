@@ -20,7 +20,7 @@ export default function NailTreatmentsPage() {
     <ServiceDetailPage
       title="Nail Treatments"
       intro="Clean, groomed, and professional — no polish required. Our nail services are designed with the modern gentleman in mind."
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown8b-e1630035388512.jpg"
+      photo="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80"
       services={services}
       site={site}
     />

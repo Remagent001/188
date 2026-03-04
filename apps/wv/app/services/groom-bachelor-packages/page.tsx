@@ -25,7 +25,7 @@ export default function GroomBachelorPackagesPage() {
     <ServiceDetailPage
       title="Groom & Bachelor Packages"
       intro="Your wedding day is one of the most photographed moments of your life. We offer a full selection of barbershop and salon services to create the perfect look from head to toe — with a comfortable waiting area complete with complimentary beverages and flat screen TVs."
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/09/188midtown14c-scaled-e1642387662768.jpg"
+      photo="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80"
       services={services}
       site={site}
     />

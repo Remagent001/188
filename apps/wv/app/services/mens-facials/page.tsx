@@ -20,7 +20,7 @@ export default function MensFacialsPage() {
     <ServiceDetailPage
       title="Men's Facials"
       intro="Your skin deserves as much attention as your cut. Our facial treatments are formulated and delivered specifically for men — addressing the unique challenges of men's skin with results you'll actually see and feel."
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown8b-e1630035388512.jpg"
+      photo="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80"
       services={services}
       site={site}
     />

@@ -29,7 +29,7 @@ export default function StraightRazorShavesPage() {
   return (
     <ServiceDetailPage
       title="Straight-Razor Shaves"
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/09/188midtown14c-scaled-e1642387662768.jpg"
+      photo="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80"
       services={services}
       site={site}
     />

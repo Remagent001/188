@@ -20,7 +20,7 @@ export default function ScalpTreatmentsPage() {
     <ServiceDetailPage
       title="Scalp Treatments"
       intro="Healthy hair starts with a healthy scalp. Our professional scalp treatments address dryness, buildup, and irritation — leaving your scalp refreshed and your hair looking its best."
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/09/188midtown14c-scaled-e1642387662768.jpg"
+      photo="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80"
       services={services}
       site={site}
     />

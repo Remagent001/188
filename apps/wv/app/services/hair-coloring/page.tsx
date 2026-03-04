@@ -29,7 +29,7 @@ export default function HairColoringPage() {
   return (
     <ServiceDetailPage
       title="Hair Coloring & Blending"
-      photo="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/188midtown11b-e1630035246155.jpg"
+      photo="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
       services={services}
       site={site}
     />
