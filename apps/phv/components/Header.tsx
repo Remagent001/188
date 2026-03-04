@@ -43,14 +43,12 @@ export function Header({ site }: HeaderProps) {
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3 shrink-0">
-          <div className="bg-[#aa0000] text-white font-bold text-base px-2.5 py-1.5 leading-none tracking-tight">
-            18|8
-          </div>
-          <div className="hidden sm:block leading-tight">
-            <div className="text-[#212934] text-xs font-bold uppercase tracking-[0.2em]">Eighteen Eight</div>
-            <div className="text-gray-400 text-[10px] uppercase tracking-[0.2em]">Fine Men's Salons</div>
-          </div>
+        <a href="/" className="flex items-center shrink-0">
+          <img
+            src="/images/logo.gif"
+            alt="18|8 Fine Men's Salon"
+            className="h-10 object-contain"
+          />
         </a>
 
         {/* Desktop nav */}

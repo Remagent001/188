@@ -45,7 +45,7 @@ export function Header({ site }: HeaderProps) {
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0">
           <img
-            src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
+            src="/images/logo.gif"
             alt="18|8 Fine Men's Salon"
             className="h-10 object-contain"
           />
