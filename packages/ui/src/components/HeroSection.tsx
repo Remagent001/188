@@ -13,17 +13,13 @@ export function HeroSection({ site }: HeroSectionProps) {
         style={{
           backgroundImage:
             "url('/images/hero-bg.jpg')",
-          opacity: 0.55,
+          opacity: 0.4,
         }}
         aria-hidden="true"
       />
-      {/* Gradient overlay — dark at top/bottom, lighter in center */}
+      {/* Dark overlay for text legibility */}
       <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.85) 100%)",
-        }}
+        className="absolute inset-0 bg-black/55"
         aria-hidden="true"
       />
 
