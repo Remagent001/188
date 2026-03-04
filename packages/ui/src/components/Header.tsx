@@ -31,24 +31,26 @@ export function Header({ site }: HeaderProps) {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       {/* Top bar */}
-      <div className="bg-[#111] text-center text-xs text-[#9ca3af] py-1.5 tracking-wider uppercase">
+      <div className="bg-[#212934] text-center text-xs text-white/70 py-1.5 tracking-wider uppercase">
         Open 7 Days a Week &nbsp;|&nbsp;{" "}
-        <a href={`tel:${site.phone}`} className="hover:text-[#c9a96e] transition-colors">
+        <a href={`tel:${site.phone}`} className="hover:text-white transition-colors">
           {site.phoneFormatted}
         </a>
       </div>
 
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        {/* Logo */}
-        <a href="/" className="flex items-center shrink-0">
-          <img
-            src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
-            alt="18|8 Fine Men's Salon"
-            className="h-10 object-contain"
-          />
+        {/* Logo — corporate 18|8 badge style */}
+        <a href="/" className="flex items-center gap-3 shrink-0">
+          <div className="bg-[#cc0000] text-white font-bold text-base px-2.5 py-1.5 leading-none tracking-tight">
+            18|8
+          </div>
+          <div className="hidden sm:block leading-tight">
+            <div className="text-[#212934] text-xs font-bold uppercase tracking-[0.2em]">Eighteen Eight</div>
+            <div className="text-gray-400 text-[10px] uppercase tracking-[0.2em]">Fine Men's Salons</div>
+          </div>
         </a>
 
         {/* Desktop nav */}
@@ -61,7 +63,7 @@ export function Header({ site }: HeaderProps) {
           >
             <a
               href="/services"
-              className="text-white/80 hover:text-[#c9a96e] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
+              className="text-[#212934] hover:text-[#cc0000] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
             >
               Services
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,12 +71,12 @@ export function Header({ site }: HeaderProps) {
               </svg>
             </a>
             {servicesOpen && (
-              <div className="absolute top-full left-0 bg-black border border-white/10 py-2 w-56 shadow-xl">
+              <div className="absolute top-full left-0 bg-white border border-gray-200 py-2 w-56 shadow-lg">
                 {services.map((s) => (
                   <a
                     key={s.href}
                     href={s.href}
-                    className="block px-4 py-2 text-xs text-white/70 hover:text-[#c9a96e] hover:bg-white/5 transition-colors"
+                    className="block px-4 py-2 text-xs text-gray-600 hover:text-[#cc0000] hover:bg-gray-50 transition-colors"
                   >
                     {s.label}
                   </a>
@@ -87,7 +89,7 @@ export function Header({ site }: HeaderProps) {
             <a
               key={link.href}
               href={link.href}
-              className="text-white/80 hover:text-[#c9a96e] uppercase tracking-wider text-xs font-medium transition-colors"
+              className="text-[#212934] hover:text-[#cc0000] uppercase tracking-wider text-xs font-medium transition-colors"
             >
               {link.label}
             </a>
@@ -100,13 +102,13 @@ export function Header({ site }: HeaderProps) {
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
+            className="bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
           >
-            Book Now
+            Book Online
           </a>
           {/* Mobile menu toggle */}
           <button
-            className="lg:hidden text-white p-1"
+            className="lg:hidden text-[#212934] p-1"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -123,15 +125,15 @@ export function Header({ site }: HeaderProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-black border-t border-white/10 px-4 py-4 space-y-1">
-          <a href="/services" className="block text-white/80 py-2 text-sm uppercase tracking-wider">Services</a>
+        <div className="lg:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-1">
+          <a href="/services" className="block text-[#212934] py-2 text-sm uppercase tracking-wider">Services</a>
           {services.map((s) => (
-            <a key={s.href} href={s.href} className="block text-white/50 py-1.5 text-xs pl-4">
+            <a key={s.href} href={s.href} className="block text-gray-500 py-1.5 text-xs pl-4 hover:text-[#cc0000]">
               {s.label}
             </a>
           ))}
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="block text-white/80 py-2 text-sm uppercase tracking-wider">
+            <a key={link.href} href={link.href} className="block text-[#212934] py-2 text-sm uppercase tracking-wider hover:text-[#cc0000]">
               {link.label}
             </a>
           ))}

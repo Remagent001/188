@@ -9,14 +9,14 @@ export const metadata = {
 };
 
 const team = [
-  { name: "Stylist Name", title: "Master Stylist",  photo: "https://randomuser.me/api/portraits/men/36.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/48.jpg" },
-  { name: "Stylist Name", title: "Senior Stylist",   photo: "https://randomuser.me/api/portraits/men/62.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/78.jpg" },
-  { name: "Stylist Name", title: "Stylist",          photo: "https://randomuser.me/api/portraits/women/32.jpg" },
-  { name: "Stylist Name", title: "Master Barber",    photo: "https://randomuser.me/api/portraits/men/58.jpg" },
-  { name: "Stylist Name", title: "Stylist",          photo: "https://randomuser.me/api/portraits/women/71.jpg" },
-  { name: "Stylist Name", title: "Barber",           photo: "https://randomuser.me/api/portraits/men/27.jpg" },
+  { name: "Stylist Name", title: "Master Stylist",  photo: "/images/team/team-1.jpg" },
+  { name: "Stylist Name", title: "Senior Stylist",  photo: "/images/team/team-2.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "/images/team/team-3.jpg" },
+  { name: "Stylist Name", title: "Barber",          photo: "/images/team/team-4.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "/images/team/team-5.jpg" },
+  { name: "Stylist Name", title: "Senior Stylist",  photo: "/images/team/team-6.jpg" },
+  { name: "Stylist Name", title: "Master Barber",   photo: "/images/team/team-7.jpg" },
+  { name: "Stylist Name", title: "Stylist",         photo: "/images/team/team-8.jpg" },
 ];
 
 export default function AboutPage() {

@@ -51,7 +51,7 @@ export default function CareersPage() {
       </section>
 
       {/* Careers form section */}
-      <CareersSection />
+      <CareersSection accessKey="5087e232-cb1e-4c0b-9efb-0c0738b7f620" siteLabel="Uptown – West Village" />
     </>
   );
 }

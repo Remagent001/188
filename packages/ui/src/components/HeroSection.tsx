@@ -6,36 +6,35 @@ interface HeroSectionProps {
 
 export function HeroSection({ site }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background — actual 18|8 salon interior */}
+    <section className="relative min-h-screen flex items-center justify-center bg-[#212934] overflow-hidden">
+      {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage:
-            "url('/images/hero-bg.jpg')",
-          opacity: 0.4,
+          backgroundImage: "url('/images/hero-bg.jpg')",
+          opacity: 0.35,
         }}
         aria-hidden="true"
       />
-      {/* Dark overlay for text legibility */}
-      <div
-        className="absolute inset-0 bg-black/55"
-        aria-hidden="true"
-      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-[#212934]/60" aria-hidden="true" />
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
-          <img
-            src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
-            alt="18|8 Fine Men's Salon"
-            className="h-24 object-contain"
-          />
+        {/* Corporate-style badge logo */}
+        <div className="mb-10 flex justify-center items-center gap-4">
+          <div className="h-px w-16 bg-white/30" />
+          <div className="text-center">
+            <div className="bg-[#cc0000] text-white font-bold text-3xl px-4 py-2 inline-block leading-none tracking-tight mb-2">
+              18|8
+            </div>
+            <div className="text-white text-[10px] uppercase tracking-[0.4em] block">Fine Men's Salons</div>
+          </div>
+          <div className="h-px w-16 bg-white/30" />
         </div>
 
         <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
           A Classic Barbershop<br />
-          <span className="text-[#c9a96e]">For The Modern Gentleman</span>
+          <span className="text-[#cc0000]">For The Modern Gentleman</span>
         </h1>
 
         <p className="text-white/80 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
@@ -49,21 +48,21 @@ export function HeroSection({ site }: HeroSectionProps) {
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="bg-[#cc0000] hover:bg-[#a80000] text-white font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Book Your Appointment
           </a>
           <a
             href="/services"
-            className="border border-white/50 hover:border-[#c9a96e] text-white hover:text-[#c9a96e] font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="border border-white/50 hover:border-white text-white font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Our Services
           </a>
         </div>
 
         {/* Address + phone pill */}
-        <div className="mt-12 inline-flex items-center gap-3 border border-white/20 bg-black/30 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
-          <svg className="w-4 h-4 text-[#c9a96e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="mt-12 inline-flex items-center gap-3 border border-white/20 bg-black/20 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
+          <svg className="w-4 h-4 text-[#cc0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -72,7 +71,7 @@ export function HeroSection({ site }: HeroSectionProps) {
           <span>
             {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}{" "}
             &nbsp;&middot;&nbsp;{" "}
-            <a href={`tel:${site.phone}`} className="hover:text-[#c9a96e] transition-colors">
+            <a href={`tel:${site.phone}`} className="hover:text-white transition-colors">
               {site.phoneFormatted}
             </a>
           </span>

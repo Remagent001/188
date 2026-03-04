@@ -4,26 +4,75 @@ import { useState } from "react";
 
 type Role = "stylist" | "frontdesk";
 
-export function CareersSection() {
+interface CareersSectionProps {
+  accessKey: string;
+  siteLabel?: string;
+}
+
+export function CareersSection({ accessKey, siteLabel }: CareersSectionProps) {
   const [activeRole, setActiveRole] = useState<Role>("stylist");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [stylistForm, setStylistForm] = useState({
-    name: "", email: "", phone: "", licensed: "", twoYearsExp: "", experience: "",
+    name: "", email: "", phone: "", licensed: "", yearsExp: "", experience: "",
   });
   const [frontDeskForm, setFrontDeskForm] = useState({
     name: "", email: "", phone: "", salonExp: "", experience: "",
   });
 
-  function handleStylistSubmit(e: React.FormEvent) {
+  async function handleStylistSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // TODO: Wire to form backend
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Stylist/Barber Application${siteLabel ? ` — ${siteLabel}` : ""}`,
+          from_name: stylistForm.name,
+          name: stylistForm.name,
+          email: stylistForm.email,
+          phone: stylistForm.phone,
+          licensed: stylistForm.licensed,
+          years_of_experience: stylistForm.yearsExp,
+          experience: stylistForm.experience,
+          role: "Hairstylist / Barber",
+          location: siteLabel ?? "",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) setSubmitted(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
-  function handleFrontDeskSubmit(e: React.FormEvent) {
+  async function handleFrontDeskSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // TODO: Wire to form backend
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Front Desk Application${siteLabel ? ` — ${siteLabel}` : ""}`,
+          from_name: frontDeskForm.name,
+          name: frontDeskForm.name,
+          email: frontDeskForm.email,
+          phone: frontDeskForm.phone,
+          salon_experience: frontDeskForm.salonExp,
+          experience: frontDeskForm.experience,
+          role: "Front Desk (DOFI)",
+          location: siteLabel ?? "",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) setSubmitted(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -119,17 +168,18 @@ export function CareersSection() {
                   </div>
                   <div>
                     <label className="text-white/50 text-xs uppercase tracking-wider block mb-2">
-                      Do you have at least 2 years of experience cutting/styling hair? *
+                      How much experience do you have cutting hair? *
                     </label>
                     <select
                       required
-                      value={stylistForm.twoYearsExp}
-                      onChange={(e) => setStylistForm({ ...stylistForm, twoYearsExp: e.target.value })}
+                      value={stylistForm.yearsExp}
+                      onChange={(e) => setStylistForm({ ...stylistForm, yearsExp: e.target.value })}
                       className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
                     >
                       <option value="">Select...</option>
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
+                      <option value="less-than-2">Less than 2 years</option>
+                      <option value="3-5">3 – 5 years</option>
+                      <option value="more-than-5">More than 5 years</option>
                     </select>
                   </div>
                   <div>
@@ -146,9 +196,10 @@ export function CareersSection() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
+                    disabled={loading}
+                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors disabled:opacity-60"
                   >
-                    Submit Application
+                    {loading ? "Submitting..." : "Submit Application"}
                   </button>
                 </form>
               </div>
@@ -213,9 +264,10 @@ export function CareersSection() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
+                    disabled={loading}
+                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors disabled:opacity-60"
                   >
-                    Submit Application
+                    {loading ? "Submitting..." : "Submit Application"}
                   </button>
                 </form>
               </div>

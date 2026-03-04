@@ -51,7 +51,7 @@ export default function CareersPage() {
       </section>
 
       {/* Careers form section */}
-      <CareersSection />
+      <CareersSection accessKey="89730613-80df-4299-b0f9-8aa10f8e4129" siteLabel="Preston Hollow Village" />
     </>
   );
 }
