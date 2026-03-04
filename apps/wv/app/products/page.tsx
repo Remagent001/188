@@ -13,16 +13,19 @@ const products = [
     name: "Reuzel",
     description:
       "Quality men's products for styling and cleaning hair on your face and head. Old-school Rotterdam barbers formulated pomades with a vintage approach to grooming.",
+    logo: "/images/Products/Reuzel.png",
   },
   {
     name: "18.21 Man Made",
     description:
       "Named after Prohibition amendments, professional-grade craft products inspired by bootlegging history. Premium quality for the modern gentleman.",
+    logo: "/images/Products/18.21.png",
   },
   {
     name: "STMNT Grooming Goods",
     description:
       "Developed by modern barbering pioneers, STMNT products are crafted to take grooming to the next level with precision and performance.",
+    logo: "/images/Products/stmnt.png",
   },
 ];
 
