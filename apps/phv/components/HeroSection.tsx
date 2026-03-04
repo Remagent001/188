@@ -25,7 +25,7 @@ export function HeroSection({ site }: HeroSectionProps) {
           <div className="h-px w-16 bg-white/30" />
           <div className="text-center">
             <div className="bg-[#aa0000] text-white font-bold text-3xl px-4 py-2 inline-block leading-none tracking-tight mb-2">
-              18#8
+              18|8
             </div>
             <div className="text-white text-[10px] uppercase tracking-[0.4em] block">Fine Men's Salons</div>
           </div>

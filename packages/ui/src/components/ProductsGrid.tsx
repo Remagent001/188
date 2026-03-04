@@ -22,16 +22,16 @@ export function ProductsGrid({ products }: ProductsGridProps) {
               }`}
             >
               {/* Logo */}
-              <div className="md:w-1/2 flex items-center justify-center bg-white rounded-sm p-12 w-full">
+              <div className="md:w-1/2 w-full flex items-center justify-center">
                 {product.logo ? (
                   <img
                     src={product.logo}
                     alt={product.name}
-                    className="w-full max-w-xs object-contain"
-                    style={{ maxHeight: "200px" }}
+                    className="w-full object-contain"
+                    style={{ maxHeight: "320px" }}
                   />
                 ) : (
-                  <span className="text-black font-bold text-3xl tracking-wide">{product.name}</span>
+                  <span className="text-white font-bold text-3xl tracking-wide">{product.name}</span>
                 )}
               </div>
 
