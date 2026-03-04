@@ -24,7 +24,7 @@ export function HeroSection({ site }: HeroSectionProps) {
         <div className="mb-10 flex justify-center items-center gap-4">
           <div className="h-px w-16 bg-white/30" />
           <div className="text-center">
-            <div className="bg-[#cc0000] text-white font-bold text-3xl px-4 py-2 inline-block leading-none tracking-tight mb-2">
+            <div className="bg-[#aa0000] text-white font-bold text-3xl px-4 py-2 inline-block leading-none tracking-tight mb-2">
               18|8
             </div>
             <div className="text-white text-[10px] uppercase tracking-[0.4em] block">Fine Men's Salons</div>
@@ -34,7 +34,7 @@ export function HeroSection({ site }: HeroSectionProps) {
 
         <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
           A Classic Barbershop<br />
-          <span className="text-[#cc0000]">For The Modern Gentleman</span>
+          <span className="text-[#aa0000]">For The Modern Gentleman</span>
         </h1>
 
         <p className="text-white/80 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
@@ -48,7 +48,7 @@ export function HeroSection({ site }: HeroSectionProps) {
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#cc0000] hover:bg-[#a80000] text-white font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="bg-[#aa0000] hover:bg-[#a80000] text-white font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Book Your Appointment
           </a>
@@ -62,7 +62,7 @@ export function HeroSection({ site }: HeroSectionProps) {
 
         {/* Address + phone pill */}
         <div className="mt-12 inline-flex items-center gap-3 border border-white/20 bg-black/20 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
-          <svg className="w-4 h-4 text-[#cc0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 text-[#aa0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

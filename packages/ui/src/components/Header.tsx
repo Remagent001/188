@@ -44,7 +44,7 @@ export function Header({ site }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo — corporate 18|8 badge style */}
         <a href="/" className="flex items-center gap-3 shrink-0">
-          <div className="bg-[#cc0000] text-white font-bold text-base px-2.5 py-1.5 leading-none tracking-tight">
+          <div className="bg-[#aa0000] text-white font-bold text-base px-2.5 py-1.5 leading-none tracking-tight">
             18|8
           </div>
           <div className="hidden sm:block leading-tight">
@@ -63,7 +63,7 @@ export function Header({ site }: HeaderProps) {
           >
             <a
               href="/services"
-              className="text-[#212934] hover:text-[#cc0000] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
+              className="text-[#212934] hover:text-[#aa0000] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
             >
               Services
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ export function Header({ site }: HeaderProps) {
                   <a
                     key={s.href}
                     href={s.href}
-                    className="block px-4 py-2 text-xs text-gray-600 hover:text-[#cc0000] hover:bg-gray-50 transition-colors"
+                    className="block px-4 py-2 text-xs text-gray-600 hover:text-[#aa0000] hover:bg-gray-50 transition-colors"
                   >
                     {s.label}
                   </a>
@@ -89,7 +89,7 @@ export function Header({ site }: HeaderProps) {
             <a
               key={link.href}
               href={link.href}
-              className="text-[#212934] hover:text-[#cc0000] uppercase tracking-wider text-xs font-medium transition-colors"
+              className="text-[#212934] hover:text-[#aa0000] uppercase tracking-wider text-xs font-medium transition-colors"
             >
               {link.label}
             </a>
@@ -102,7 +102,7 @@ export function Header({ site }: HeaderProps) {
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
+            className="bg-[#aa0000] hover:bg-[#a80000] text-white font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
           >
             Book Online
           </a>
@@ -128,12 +128,12 @@ export function Header({ site }: HeaderProps) {
         <div className="lg:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-1">
           <a href="/services" className="block text-[#212934] py-2 text-sm uppercase tracking-wider">Services</a>
           {services.map((s) => (
-            <a key={s.href} href={s.href} className="block text-gray-500 py-1.5 text-xs pl-4 hover:text-[#cc0000]">
+            <a key={s.href} href={s.href} className="block text-gray-500 py-1.5 text-xs pl-4 hover:text-[#aa0000]">
               {s.label}
             </a>
           ))}
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="block text-[#212934] py-2 text-sm uppercase tracking-wider hover:text-[#cc0000]">
+            <a key={link.href} href={link.href} className="block text-[#212934] py-2 text-sm uppercase tracking-wider hover:text-[#aa0000]">
               {link.label}
             </a>
           ))}

@@ -99,9 +99,9 @@ export function ServicesOverview() {
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#cc0000] text-xs uppercase tracking-[0.4em] mb-3">What We Offer</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">What We Offer</p>
           <h2 className="text-[#212934] text-3xl sm:text-4xl font-bold">Premium Grooming Services</h2>
-          <div className="w-12 h-px bg-[#cc0000] mx-auto mt-5" />
+          <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200">
@@ -111,14 +111,14 @@ export function ServicesOverview() {
               href={service.href}
               className="group bg-white hover:bg-gray-50 p-8 flex flex-col gap-4 transition-colors"
             >
-              <div className="w-10 h-10 text-[#cc0000]">
+              <div className="w-10 h-10 text-[#aa0000]">
                 {service.icon}
               </div>
-              <h3 className="text-[#212934] font-semibold group-hover:text-[#cc0000] transition-colors">
+              <h3 className="text-[#212934] font-semibold group-hover:text-[#aa0000] transition-colors">
                 {service.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed flex-1">{service.description}</p>
-              <span className="text-[#cc0000] text-xs uppercase tracking-wider flex items-center gap-1 mt-2">
+              <span className="text-[#aa0000] text-xs uppercase tracking-wider flex items-center gap-1 mt-2">
                 Learn More
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

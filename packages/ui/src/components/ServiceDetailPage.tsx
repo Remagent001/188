@@ -25,9 +25,9 @@ export function ServiceDetailPage({
       {/* Page header */}
       <section className="bg-[#f5f5f5] pt-24 pb-10 px-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[#cc0000] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
           <h1 className="text-[#212934] text-4xl sm:text-5xl font-bold uppercase">{title}</h1>
-          <div className="w-16 h-px bg-[#cc0000] mt-5" />
+          <div className="w-16 h-px bg-[#aa0000] mt-5" />
           {intro && (
             <p className="text-gray-600 text-sm mt-5 max-w-2xl leading-relaxed">{intro}</p>
           )}
@@ -54,7 +54,7 @@ export function ServiceDetailPage({
           <div className="flex-1">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
               {services.map((service) => (
-                <div key={service.name} className="border-t-2 border-[#cc0000] pt-6">
+                <div key={service.name} className="border-t-2 border-[#aa0000] pt-6">
                   <h3 className="text-[#212934] font-bold uppercase tracking-wider text-sm mb-3">
                     {service.name}
                   </h3>
@@ -69,7 +69,7 @@ export function ServiceDetailPage({
       </section>
 
       {/* Booking CTA */}
-      <section className="bg-[#cc0000] py-14 px-4 text-center">
+      <section className="bg-[#aa0000] py-14 px-4 text-center">
         <h2 className="text-white text-2xl sm:text-3xl font-bold mb-3">
           Ready to Book?
         </h2>
@@ -87,7 +87,7 @@ export function ServiceDetailPage({
           </a>
           <a
             href={`tel:${site.phone}`}
-            className="border-2 border-white hover:bg-white hover:text-[#cc0000] text-white font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="border-2 border-white hover:bg-white hover:text-[#aa0000] text-white font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Call {site.phoneFormatted}
           </a>
