@@ -7,42 +7,25 @@ interface HeroSectionProps {
 export function HeroSection({ site }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background — actual 18|8 salon interior */}
+      {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/images/hero-bg.jpg')",
-          opacity: 0.4,
-        }}
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')", opacity: 0.4 }}
         aria-hidden="true"
       />
-      {/* Dark overlay for text legibility */}
-      <div
-        className="absolute inset-0 bg-black/55"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
 
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
-          <img
-            src="https://www.188palmbeachgardens.com/wp-content/uploads/2021/08/cropped-188-Stacked-Black-White-Text-Transparent.png"
-            alt="18|8 Fine Men's Salon"
-            className="h-24 object-contain"
-          />
-        </div>
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-          A Classic Barbershop<br />
-          <span className="text-[#c9a96e]">For The Modern Gentleman</span>
+        <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase tracking-wide leading-none mb-4">
+          18|8 Fine Men's Salon
         </h1>
 
-        <p className="text-white/80 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-          In {site.locationName}, we&rsquo;ve re-imagined and recreated the experience of
-          the old barbershop for the modern man &mdash; masterful haircuts, precision
-          straight-razor shaves, and premium grooming services.
+        <p className="text-[#c9a96e] text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          {site.locationName}
         </p>
+
+        <div className="w-16 h-px bg-[#c9a96e] mx-auto my-8" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
