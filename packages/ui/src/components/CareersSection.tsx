@@ -114,6 +114,7 @@ export function CareersSection() {
                       <option value="">Select...</option>
                       <option value="yes-cosmetologist">Yes, Licensed Cosmetologist</option>
                       <option value="yes-barber">Yes, Licensed Barber</option>
+                      <option value="yes-both">Yes, Both</option>
                       <option value="no">Not yet licensed</option>
                     </select>
                   </div>
