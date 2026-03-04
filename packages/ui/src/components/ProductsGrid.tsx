@@ -10,33 +10,42 @@ interface ProductsGridProps {
 
 export function ProductsGrid({ products }: ProductsGridProps) {
   return (
-    <section className="bg-[#0f0f0f] py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">In Our Shop</p>
-          <h2 className="text-white text-3xl sm:text-4xl font-bold">Grooming Products</h2>
-          <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
-          <p className="text-white/50 text-sm mt-4 max-w-xl mx-auto">
-            We carry only the best professional grooming brands — hand-selected by our stylists and
-            recommended to keep your look sharp between visits.
-          </p>
-        </div>
+    <section className="bg-[#0a0a0a] py-20 px-4">
+      <div className="max-w-6xl mx-auto">
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {products.map((product) => (
-            <div key={product.name} className="bg-[#141414] border border-white/5 p-8 flex flex-col gap-4 hover:border-[#c9a96e]/30 transition-colors">
-              {/* Logo placeholder */}
-              <div className="h-16 flex items-center">
+        <div className="flex flex-col gap-0">
+          {products.map((product, index) => (
+            <div
+              key={product.name}
+              className={`flex flex-col md:flex-row items-center gap-12 py-16 px-8 border-b border-white/5 ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Logo */}
+              <div className="md:w-1/2 flex items-center justify-center bg-white rounded-sm p-12 w-full">
                 {product.logo ? (
-                  <img src={product.logo} alt={product.name} className="h-12 object-contain" />
+                  <img
+                    src={product.logo}
+                    alt={product.name}
+                    className="w-full max-w-xs object-contain"
+                    style={{ maxHeight: "200px" }}
+                  />
                 ) : (
-                  <span className="text-[#c9a96e] font-bold text-xl tracking-wide">{product.name}</span>
+                  <span className="text-black font-bold text-3xl tracking-wide">{product.name}</span>
                 )}
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">{product.description}</p>
+
+              {/* Text */}
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Featured Brand</p>
+                <h3 className="text-white text-2xl sm:text-3xl font-bold mb-4">{product.name}</h3>
+                <div className="w-10 h-px bg-[#c9a96e] mb-6 mx-auto md:mx-0" />
+                <p className="text-white/60 text-sm leading-relaxed">{product.description}</p>
+              </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
