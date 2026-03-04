@@ -1,7 +1,7 @@
-import { HeroSection } from "../../components/HeroSection";
-import { ServicesOverview } from "../../components/ServicesOverview";
-import { TeamGrid } from "../../components/TeamGrid";
-import { BookingCTA } from "../../components/BookingCTA";
+import { HeroSection } from "../components/HeroSection";
+import { ServicesOverview } from "../components/ServicesOverview";
+import { TeamGrid } from "../components/TeamGrid";
+import { BookingCTA } from "../components/BookingCTA";
 import site from "../config/site";
 
 // Placeholder team — replace names, titles, and photos with real ones
