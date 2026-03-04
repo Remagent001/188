@@ -1,7 +1,7 @@
 import type { SiteConfig } from "@repo/ui/types/site";
 
 const site: SiteConfig = {
-  locationName: "Preston Hollow Village",
+  locationName: "Preston Hollow Village – Dallas",
   fullName: "18|8 Fine Men's Salon Preston Hollow Village",
   address: {
     street: "7949 Walnut Hill Lane",

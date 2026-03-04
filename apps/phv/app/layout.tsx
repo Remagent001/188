@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@repo/ui/components/Header";
-import { Footer } from "@repo/ui/components/Footer";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 import site from "../config/site";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header site={site} />
-        <main className="pt-[72px]">{children}</main>
+        <main className="pt-[88px]">{children}</main>
         <Footer site={site} />
       </body>
     </html>
