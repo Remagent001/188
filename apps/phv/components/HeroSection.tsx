@@ -6,7 +6,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ site }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#212934] overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-end bg-[#212934] overflow-hidden">
       {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -15,19 +15,20 @@ export function HeroSection({ site }: HeroSectionProps) {
       />
       <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 w-full px-8 sm:px-16 pb-20 sm:pb-28 self-end">
 
-        <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase tracking-wide leading-none mb-4">
+        <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase leading-none mb-4"
+          style={{ letterSpacing: "0.12em" }}>
           18|8 Fine Men's Salon
         </h1>
 
-        <p className="text-white text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-white text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.25em" }}>
           {site.locationName}
         </p>
 
-        <div className="w-16 h-px bg-white/40 mx-auto my-8" />
+        <div className="w-16 h-px bg-white/40 my-8" />
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
             href={site.booking.url}
             target="_blank"
