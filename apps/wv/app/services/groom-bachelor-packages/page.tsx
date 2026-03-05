@@ -25,7 +25,7 @@ export default function GroomBachelorPackagesPage() {
     <ServiceDetailPage
       title="Groom & Bachelor Packages"
       intro="Your wedding day is one of the most photographed moments of your life. We offer a full selection of barbershop and salon services to create the perfect look from head to toe — with a comfortable waiting area complete with complimentary beverages and flat screen TVs."
-      photo="/images/service-groom.jpg"
+      photo="/images/service-groom.png"
       services={services}
       site={site}
     />

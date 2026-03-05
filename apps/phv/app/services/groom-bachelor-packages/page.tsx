@@ -35,7 +35,7 @@ export default function GroomBachelorPackagesPage() {
     <ServiceDetailPage
       title="Groom & Bachelor Packages"
       intro="Your wedding day is one of the most photographed moments of your life. Look your absolute best with our exclusive groom and groomsmen packages. Contact us directly to coordinate your group booking."
-      photo="/images/service-groom.jpg"
+      photo="/images/service-groom.png"
       services={services}
       site={site}
     />
