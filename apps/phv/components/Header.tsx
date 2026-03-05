@@ -35,7 +35,6 @@ export function Header({ site }: HeaderProps) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       {/* Top bar */}
       <div className="bg-[#212934] text-center text-xs text-white/70 py-1.5 tracking-wider uppercase">
-        Open 7 Days a Week &nbsp;|&nbsp;{" "}
         <a href={`tel:${site.phone}`} className="hover:text-white transition-colors">
           {site.phoneFormatted}
         </a>

@@ -11,18 +11,9 @@ export function Footer({ site }: FooterProps) {
 
         {/* Brand */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="bg-[#aa0000] text-white font-bold text-base px-2.5 py-1.5 leading-none tracking-tight">
-              18|8
-            </div>
-            <div className="leading-tight">
-              <div className="text-white text-xs font-bold uppercase tracking-[0.2em]">Eighteen Eight</div>
-              <div className="text-white/40 text-[10px] uppercase tracking-[0.2em]">Fine Men's Salons</div>
-            </div>
-          </div>
-          <p className="text-sm leading-relaxed">
-            A classic barbershop for the modern gentleman in {site.address.city}, {site.address.state}.
-          </p>
+          <a href="/">
+            <img src="/images/Logo.gif" alt="18|8 Fine Men's Salon" className="h-12 object-contain" />
+          </a>
           <div className="flex gap-4">
             {site.social.facebook && (
               <a href={site.social.facebook} target="_blank" rel="noopener noreferrer"

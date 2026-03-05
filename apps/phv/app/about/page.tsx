@@ -26,7 +26,7 @@ export default function AboutPage() {
       <section className="bg-[#f5f5f5] pt-24 pb-16 px-4 text-center">
         <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Our Story</p>
         <h1 className="text-[#212934] text-4xl sm:text-5xl font-bold mb-4">
-          About 18|8 Preston Hollow Village
+          About Eighteen Eight
         </h1>
         <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         <p className="text-gray-500 text-sm mt-6 max-w-xl mx-auto leading-relaxed">
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-gray-100">
             {[
               { number: "18|8", label: "Since 2010" },
-              { number: "8+", label: "Services Offered" },
+              { number: "10,000+", label: "Heads Groomed" },
               { number: "100%", label: "Men's Focus" },
               { number: "5★", label: "Client Rated" },
             ].map((stat) => (

@@ -120,7 +120,7 @@ export function CareersSection() {
                   </div>
                   <div>
                     <label className="text-gray-500 text-xs uppercase tracking-wider block mb-2">
-                      Do you have at least 2 years of experience cutting/styling hair? *
+                      How many years experience do you have cutting hair? *
                     </label>
                     <select
                       required
@@ -129,8 +129,9 @@ export function CareersSection() {
                       className="w-full bg-white border border-gray-300 text-[#212934] text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     >
                       <option value="">Select...</option>
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
+                      <option value="less-than-2">Less than 2</option>
+                      <option value="3-to-5">3 to 5</option>
+                      <option value="more-than-5">More than 5</option>
                     </select>
                   </div>
                   <div>
