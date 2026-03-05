@@ -45,7 +45,7 @@ export function Header({ site }: HeaderProps) {
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0">
           <img
-            src="/images/logo.gif"
+            src="/images/Logo.gif"
             alt="18|8 Fine Men's Salon"
             className="h-10 object-contain"
           />
