@@ -20,8 +20,9 @@ const services = [
 
 const navLinks = [
   { label: "Products", href: "/products" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Specials", href: "/specials" },
   { label: "About", href: "/about" },
-  { label: "Reviews", href: "/reviews" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
