@@ -10,38 +10,22 @@ export function HeroSection({ site }: HeroSectionProps) {
       {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/hero-bg.jpg')",
-          opacity: 0.35,
-        }}
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')", opacity: 0.4 }}
         aria-hidden="true"
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#212934]/60" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
 
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        {/* Corporate badge logo */}
-        <div className="mb-10 flex justify-center items-center gap-4">
-          <div className="h-px w-16 bg-white/30" />
-          <div className="text-center">
-            <div className="bg-[#aa0000] text-white font-bold text-3xl px-4 py-2 inline-block leading-none tracking-tight mb-2">
-              18|8
-            </div>
-            <div className="text-white text-[10px] uppercase tracking-[0.4em] block">Fine Men's Salons</div>
-          </div>
-          <div className="h-px w-16 bg-white/30" />
-        </div>
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-          A Classic Barbershop<br />
-          <span className="text-[#aa0000]">For The Modern Gentleman</span>
+        <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase tracking-wide leading-none mb-4">
+          18|8 Fine Men's Salon
         </h1>
 
-        <p className="text-white/80 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-          In {site.locationName}, we&rsquo;ve re-imagined and recreated the experience of
-          the old barbershop for the modern man &mdash; masterful haircuts, precision
-          straight-razor shaves, and premium grooming services.
+        <p className="text-white text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          {site.locationName}
         </p>
+
+        <div className="w-16 h-px bg-white/40 mx-auto my-8" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -61,8 +45,8 @@ export function HeroSection({ site }: HeroSectionProps) {
         </div>
 
         {/* Address + phone pill */}
-        <div className="mt-12 inline-flex items-center gap-3 border border-white/20 bg-black/20 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
-          <svg className="w-4 h-4 text-[#aa0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="mt-12 inline-flex items-center gap-3 border border-white/20 bg-black/30 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
+          <svg className="w-4 h-4 text-white/50 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
