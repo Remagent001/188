@@ -1,6 +1,1 @@
-# Shared images are copied here at build time from packages/assets/images/
-# Do not commit them here — edit the source in packages/assets/images/ instead
-service-*.jpg
-service-*.png
-Products/
-*.gif
+# Images committed directly for reliable deployment
