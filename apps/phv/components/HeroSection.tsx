@@ -55,7 +55,7 @@ export function HeroSection({ site }: HeroSectionProps) {
           </svg>
           <span>
             <a href={site.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}
+              {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}, {site.address.city}, {site.address.state} {site.address.zip}
             </a>
             {" "}&nbsp;&middot;&nbsp;{" "}
             <a href={`tel:${site.phone}`} className="hover:text-white transition-colors">
