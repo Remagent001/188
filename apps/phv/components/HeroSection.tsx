@@ -18,7 +18,7 @@ export function HeroSection({ site }: HeroSectionProps) {
       <div className="relative z-10 w-full px-8 sm:px-16 pb-20 sm:pb-28 self-end">
 
         <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase leading-none mb-4"
-          style={{ letterSpacing: "0.12em", fontFamily: "'Book Antiqua', 'Palatino Linotype', Palatino, serif" }}>
+          style={{ letterSpacing: "0.12em", fontFamily: "'Bebas Neue', sans-serif" }}>
           18|8 Fine Men's Salon
         </h1>
 

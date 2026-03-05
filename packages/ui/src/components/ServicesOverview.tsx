@@ -58,14 +58,14 @@ const services = [
     ),
   },
   {
-    title: "Nail Treatments",
-    href: "/services/nail-treatments",
+    title: "Facial Hair Sculpting",
+    href: "/services/facial-hair-sculpting",
     description:
-      "Man-icures and pedicures — clean, groomed, and professional. No polish required.",
+      "Expert beard shaping, mustache styling, and precision edge-ups — look sharp and defined.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-        <rect x="5" y="2" width="14" height="20" rx="2" />
-        <path d="M9 7h6M9 11h6M9 15h4" />
+        <path d="M12 2C6.48 2 2 6.48 2 12c0 2.5.9 4.8 2.4 6.5C5.6 17 8.5 16 12 16s6.4 1 7.6 2.5A9.96 9.96 0 0022 12c0-5.52-4.48-10-10-10z" />
+        <path d="M8 13c0 2 1.8 3 4 3s4-1 4-3" />
       </svg>
     ),
   },

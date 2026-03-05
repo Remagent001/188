@@ -14,7 +14,7 @@ const services = [
   { label: "Straight-Razor Shaves", href: "/services/straight-razor-shaves" },
   { label: "Men's Waxing", href: "/services/mens-waxing" },
   { label: "Scalp Treatments", href: "/services/scalp-treatments" },
-  { label: "Nail Treatments", href: "/services/nail-treatments" },
+  { label: "Facial Hair Sculpting", href: "/services/facial-hair-sculpting" },
   { label: "Groom & Bachelor Packages", href: "/services/groom-bachelor-packages" },
 ];
 

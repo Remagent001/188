@@ -5,7 +5,7 @@ import site from "../../config/site";
 export const metadata = {
   title: `Services | ${site.seo.title}`,
   description:
-    "Explore our full range of men's grooming services — haircuts, straight-razor shaves, hair coloring, facials, waxing, scalp treatments, nail treatments, and groom packages.",
+    "Explore our full range of men's grooming services — haircuts, straight-razor shaves, hair coloring, facials, waxing, scalp treatments, facial hair sculpting, and groom packages.",
 };
 
 export default function ServicesPage() {
