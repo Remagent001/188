@@ -55,6 +55,13 @@ export default function FacialHairSculptingPage() {
             <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Sculpting Menu</p>
             <h2 className="text-[#212934] text-3xl font-bold">Beard & Mustache Services</h2>
             <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
+            <div className="mt-10 max-w-4xl mx-auto">
+              <img
+                src="/images/service-sculpting.jpg"
+                alt="Facial Hair Sculpting at 18|8 Preston Hollow Village"
+                className="w-full object-cover max-h-96"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-gray-200">
@@ -84,17 +91,6 @@ export default function FacialHairSculptingPage() {
               goals and the best approach for your face shape and hair type.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Feature photo */}
-      <section className="bg-[#f5f5f5] py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <img
-            src="/images/service-sculpting.jpg"
-            alt="Facial Hair Sculpting at 18|8 Preston Hollow Village"
-            className="w-full object-cover max-h-96"
-          />
         </div>
       </section>
 

@@ -40,9 +40,11 @@ export default function HomePage() {
   return (
     <>
       <HeroSection site={site} />
-      <ServicesOverview />
-      <TeamGrid members={team} />
-      <BookingCTA site={site} />
+      <div className="relative z-10">
+        <ServicesOverview />
+        <TeamGrid members={team} />
+        <BookingCTA site={site} />
+      </div>
     </>
   );
 }

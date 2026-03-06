@@ -20,6 +20,8 @@ function TeamCard({ member }: { member: TeamMember }) {
   return (
     <div
       className={`text-center ${hasBio ? "cursor-pointer" : ""}`}
+      onMouseEnter={() => hasBio && setFlipped(true)}
+      onMouseLeave={() => hasBio && setFlipped(false)}
       onClick={() => hasBio && setFlipped(!flipped)}
     >
       <div
@@ -51,11 +53,6 @@ function TeamCard({ member }: { member: TeamMember }) {
                 </svg>
               </div>
             )}
-            {hasBio && (
-              <div className="absolute bottom-2 right-2 bg-[#aa0000] text-white text-[10px] uppercase tracking-wider px-2 py-1 opacity-70">
-                Tap to read bio
-              </div>
-            )}
           </div>
 
           {/* Back — bio */}
@@ -65,9 +62,6 @@ function TeamCard({ member }: { member: TeamMember }) {
           >
             <p className="text-white/80 text-xs leading-relaxed text-center">
               {member.bio}
-            </p>
-            <p className="text-[#aa0000] text-[10px] uppercase tracking-wider mt-4 opacity-70">
-              Tap to flip back
             </p>
           </div>
         </div>
