@@ -10,7 +10,7 @@ const site: SiteConfig = {
     state: "TX",
     zip: "75204",
     mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Dallas/@32.809337,-96.796878,20z/data=!4m6!3m5!1s0x864e9ed410184a6f:0x374c19c2117e17e8!8m2!3d32.809337!4d-96.796878!16s%2Fg%2F11bbwmjnpj?entry=ttu",
-    appleMapsUrl: "https://maps.apple.com/?place=zxSendzY8QHemL",
+    appleMapsUrl: "https://maps.apple.com/?address=3699%20McKinney%20Ave%20Suite%20402,%20Dallas,%20TX%2075204&auid=7993498683498498617&ll=32.809337,-96.796878&lsp=9902&q=18%7C8%20Fine%20Men%27s%20Salons%20-%20Dallas",
   },
   phone: "2143052079",
   phoneFormatted: "(214) 305-2079",
