@@ -12,7 +12,7 @@ const locations = [
     hours: "Mon–Fri 10AM–8PM · Sat 9AM–7PM · Sun 10AM–6PM",
     url: "https://eighteeneightwv.com",
     bookingUrl: "https://www.phorest.com/salon/eighteeneightfinemenssalons",
-    mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Dallas/@32.809337,-96.796878,20z/data=!4m6!3m5!1s0x864e9ed410184a6f:0x374c19c2117e17e8!8m2!3d32.809337!4d-96.796878",
+    mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Dallas/@32.809337,-96.796878,20z/data=!4m6!3m5!1s0x864e9ed410184a6f:0x374c19c2117e17e8!8m2!3d32.809337!4d-96.796878!16s%2Fg%2F11bbwmjnpj?entry=ttu",
     bg: "bg-[url('/images/wv-bg.jpg')]",
   },
   {
