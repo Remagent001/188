@@ -19,6 +19,7 @@ export interface SiteConfig {
     state: string;
     zip: string;
     mapsUrl: string;
+    appleMapsUrl: string;
   };
   phone: string;
   phoneFormatted: string;

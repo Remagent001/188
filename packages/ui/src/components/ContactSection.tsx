@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { SiteConfig } from "../types/site";
+import { MapLink } from "./MapLink";
 
 interface ContactSectionProps {
   site: SiteConfig;
@@ -33,16 +34,15 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
           <div className="space-y-8">
             <div>
               <h3 className="text-[#aa0000] text-xs uppercase tracking-widest font-semibold mb-3">Address</h3>
-              <a
-                href={site.address.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <MapLink
+                mapsUrl={site.address.mapsUrl}
+                appleMapsUrl={site.address.appleMapsUrl}
                 className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed"
               >
                 {site.address.street}<br />
                 {site.address.suite && <>{site.address.suite}<br /></>}
                 {site.address.city}, {site.address.state} {site.address.zip}
-              </a>
+              </MapLink>
             </div>
             <div>
               <h3 className="text-[#aa0000] text-xs uppercase tracking-widest font-semibold mb-3">Phone</h3>

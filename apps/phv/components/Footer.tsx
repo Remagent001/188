@@ -1,4 +1,5 @@
 import type { SiteConfig } from "@repo/ui/types/site";
+import { MapLink } from "@repo/ui/components/MapLink";
 
 interface FooterProps {
   site: SiteConfig;
@@ -61,15 +62,14 @@ export function Footer({ site }: FooterProps) {
         <div className="space-y-6">
           <div>
             <h4 className="text-white text-xs uppercase tracking-widest font-semibold mb-4">Location</h4>
-            <a
-              href={site.address.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <MapLink
+              mapsUrl={site.address.mapsUrl}
+              appleMapsUrl={site.address.appleMapsUrl}
               className="text-sm hover:text-[#aa0000] transition-colors leading-relaxed"
             >
               {site.address.street}{site.address.suite && `, ${site.address.suite}`}<br />
               {site.address.city}, {site.address.state} {site.address.zip}
-            </a>
+            </MapLink>
             <div className="mt-2">
               <a href={`tel:${site.phone}`} className="text-sm hover:text-[#aa0000] transition-colors">
                 {site.phoneFormatted}

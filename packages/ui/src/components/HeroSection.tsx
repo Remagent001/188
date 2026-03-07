@@ -1,4 +1,5 @@
 import type { SiteConfig } from "../types/site";
+import { MapLink } from "./MapLink";
 
 interface HeroSectionProps {
   site: SiteConfig;
@@ -47,7 +48,7 @@ export function HeroSection({ site }: HeroSectionProps) {
 
         {/* Address + phone pill */}
         <div className="mt-10 inline-flex items-center gap-3 border border-white/20 bg-black/30 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
-          <a href={site.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-[#aa0000] transition-colors">
+          <MapLink mapsUrl={site.address.mapsUrl} appleMapsUrl={site.address.appleMapsUrl} className="inline-flex items-center gap-2 hover:text-[#aa0000] transition-colors">
             <svg className="w-4 h-4 text-[#aa0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -55,7 +56,7 @@ export function HeroSection({ site }: HeroSectionProps) {
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}
-          </a>
+          </MapLink>
           <span>&middot;</span>
           <a href={`tel:${site.phone}`} className="hover:text-[#aa0000] transition-colors">
             {site.phoneFormatted}

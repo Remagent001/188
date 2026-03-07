@@ -1,4 +1,5 @@
 import type { SiteConfig } from "../types/site";
+import { MapLink } from "./MapLink";
 
 interface VisitUsSectionProps {
   site: SiteConfig;
@@ -37,16 +38,15 @@ export function VisitUsSection({ site }: VisitUsSectionProps) {
               </svg>
             </div>
             <h3 className="text-white text-xs uppercase tracking-widest font-semibold">Location</h3>
-            <a
-              href={site.address.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <MapLink
+              mapsUrl={site.address.mapsUrl}
+              appleMapsUrl={site.address.appleMapsUrl}
               className="text-white/70 text-sm leading-relaxed hover:text-[#aa0000] transition-colors block"
             >
               {site.address.street}<br />
               {site.address.suite && <>{site.address.suite}<br /></>}
               {site.address.city}, {site.address.state} {site.address.zip}
-            </a>
+            </MapLink>
           </div>
 
           {/* Hours */}

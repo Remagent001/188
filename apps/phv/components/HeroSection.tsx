@@ -1,4 +1,5 @@
 import type { SiteConfig } from "@repo/ui/types/site";
+import { MapLink } from "@repo/ui/components/MapLink";
 
 interface HeroSectionProps {
   site: SiteConfig;
@@ -57,9 +58,9 @@ export function HeroSection({ site }: HeroSectionProps) {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <span>
-                <a href={site.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#aa0000] transition-colors">
+                <MapLink mapsUrl={site.address.mapsUrl} appleMapsUrl={site.address.appleMapsUrl} className="hover:text-[#aa0000] transition-colors">
                   {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}, {site.address.city}, {site.address.state} {site.address.zip}
-                </a>
+                </MapLink>
                 {" "}&nbsp;&middot;&nbsp;{" "}
                 <a href={`tel:${site.phone}`} className="hover:text-[#aa0000] transition-colors">
                   {site.phoneFormatted}
