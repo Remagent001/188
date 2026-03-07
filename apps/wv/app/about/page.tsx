@@ -24,11 +24,11 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="bg-black pt-24 pb-16 px-4 text-center">
-        <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Our Story</p>
+        <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Our Story</p>
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">
           About 18|8 Uptown – West Village
         </h1>
-        <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+        <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         <p className="text-white/50 text-sm mt-6 max-w-xl mx-auto leading-relaxed">
           A classic barbershop experience reimagined for the modern gentleman — in the heart of
           Dallas's West Village.
@@ -41,11 +41,11 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left column */}
             <div>
-              <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Who We Are</p>
+              <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Who We Are</p>
               <h2 className="text-white text-3xl font-bold mb-5">
                 An Experience Unlike Any Other
               </h2>
-              <div className="w-12 h-px bg-[#c9a96e] mb-8" />
+              <div className="w-12 h-px bg-[#aa0000] mb-8" />
               <div className="space-y-5 text-white/60 text-sm leading-relaxed">
                 <p>
                   18|8 Fine Men's Salon was founded on a simple but powerful belief: men deserve
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   body: "We're proud to serve the Uptown Dallas community and to be a trusted part of the West Village neighborhood since our opening.",
                 },
               ].map((pillar) => (
-                <div key={pillar.title} className="border-l-2 border-[#c9a96e] pl-6">
+                <div key={pillar.title} className="border-l-2 border-[#aa0000] pl-6">
                   <h3 className="text-white font-semibold mb-2">{pillar.title}</h3>
                   <p className="text-white/50 text-sm leading-relaxed">{pillar.body}</p>
                 </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
               { number: "5★", label: "Client Rated" },
             ].map((stat) => (
               <div key={stat.label} className="bg-[#111] p-8 text-center">
-                <p className="text-[#c9a96e] text-3xl font-bold mb-2">{stat.number}</p>
+                <p className="text-[#aa0000] text-3xl font-bold mb-2">{stat.number}</p>
                 <p className="text-white/40 text-xs uppercase tracking-widest">{stat.label}</p>
               </div>
             ))}

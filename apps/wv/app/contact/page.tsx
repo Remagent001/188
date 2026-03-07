@@ -13,11 +13,11 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="bg-black pt-24 pb-16 px-4 text-center">
-        <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">
+        <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">
           18|8 Uptown – West Village
         </p>
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">Visit Us</h1>
-        <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+        <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         <p className="text-white/50 text-sm mt-6 max-w-xl mx-auto leading-relaxed">
           We're located in West Village in Uptown Dallas. Stop by, call, or send us a message —
           we'd love to hear from you.
@@ -28,7 +28,7 @@ export default function ContactPage() {
       <section className="bg-[#111] py-8 px-4 border-b border-white/5">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           <div>
-            <p className="text-[#c9a96e] text-xs uppercase tracking-widest mb-1">Address</p>
+            <p className="text-[#aa0000] text-xs uppercase tracking-widest mb-1">Address</p>
             <p className="text-white/70 text-sm">
               3699 McKinney Ave, Suite 402
               <br />
@@ -36,7 +36,7 @@ export default function ContactPage() {
             </p>
           </div>
           <div>
-            <p className="text-[#c9a96e] text-xs uppercase tracking-widest mb-1">Phone</p>
+            <p className="text-[#aa0000] text-xs uppercase tracking-widest mb-1">Phone</p>
             <a
               href={`tel:${site.phone}`}
               className="text-white/70 hover:text-white text-sm transition-colors"
@@ -45,7 +45,7 @@ export default function ContactPage() {
             </a>
           </div>
           <div>
-            <p className="text-[#c9a96e] text-xs uppercase tracking-widest mb-1">Hours</p>
+            <p className="text-[#aa0000] text-xs uppercase tracking-widest mb-1">Hours</p>
             <div className="text-white/70 text-sm space-y-0.5">
               {site.hours.map((h) => (
                 <p key={h.label}>

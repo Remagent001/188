@@ -13,11 +13,11 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="bg-black pt-24 pb-16 px-4 text-center">
-        <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">
+        <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">
           18|8 Uptown – West Village
         </p>
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
-        <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+        <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         <p className="text-white/50 text-sm mt-6 max-w-xl mx-auto leading-relaxed">
           Every service is performed with precision and care, in a space designed exclusively for men.
           From a classic cut to a full grooming package, we have you covered.

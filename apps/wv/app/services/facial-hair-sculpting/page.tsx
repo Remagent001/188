@@ -38,9 +38,9 @@ export default function FacialHairSculptingPage() {
     <>
       {/* Hero */}
       <section className="bg-black pt-24 pb-16 px-4 text-center">
-        <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
+        <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">Facial Hair Sculpting</h1>
-        <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+        <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         <p className="text-white/50 text-sm mt-6 max-w-xl mx-auto leading-relaxed">
           Your beard and mustache deserve the same precision and care as your haircut. Our stylists
           expertly shape, define, and sculpt your facial hair to complement your features — keeping
@@ -52,9 +52,9 @@ export default function FacialHairSculptingPage() {
       <section className="bg-[#0a0a0a] py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Sculpting Menu</p>
+            <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Sculpting Menu</p>
             <h2 className="text-white text-3xl font-bold">Beard & Mustache Services</h2>
-            <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+            <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5">
@@ -68,7 +68,7 @@ export default function FacialHairSculptingPage() {
                   {service.details.map((d) => (
                     <li
                       key={d}
-                      className="text-[#c9a96e] text-xs uppercase tracking-wider border border-[#c9a96e]/30 px-3 py-1"
+                      className="text-[#aa0000] text-xs uppercase tracking-wider border border-[#aa0000]/30 px-3 py-1"
                     >
                       {d}
                     </li>
@@ -78,7 +78,7 @@ export default function FacialHairSculptingPage() {
             ))}
           </div>
 
-          <div className="mt-10 border border-[#c9a96e]/20 p-6 bg-[#111] text-center">
+          <div className="mt-10 border border-[#aa0000]/20 p-6 bg-[#111] text-center">
             <p className="text-white/60 text-sm leading-relaxed">
               All facial hair sculpting services include a professional consultation to discuss your
               goals and the best approach for your face shape and hair type.
@@ -99,7 +99,7 @@ export default function FacialHairSculptingPage() {
       </section>
 
       {/* Booking CTA */}
-      <section className="bg-[#c9a96e] py-16 px-4 text-center">
+      <section className="bg-[#aa0000] py-16 px-4 text-center">
         <h2 className="text-black text-3xl sm:text-4xl font-bold mb-3">
           Look Sharp. Stay Defined.
         </h2>
@@ -117,7 +117,7 @@ export default function FacialHairSculptingPage() {
           </a>
           <a
             href={`tel:${site.phone}`}
-            className="border-2 border-black hover:bg-black hover:text-[#c9a96e] text-black font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="border-2 border-black hover:bg-black hover:text-[#aa0000] text-black font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Call {site.phoneFormatted}
           </a>
