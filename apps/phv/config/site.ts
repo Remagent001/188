@@ -10,7 +10,7 @@ const site: SiteConfig = {
     state: "TX",
     zip: "75230",
     mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Preston+Hollow+Village/@32.8812492,-96.7727938,18.75z/data=!4m15!1m8!3m7!1s0x864e9fc25e7e722f:0xd8e42af220886ac0!2s7949+Walnut+Hill+Ln,+Dallas,+TX+75230!3b1!8m2!3d32.8813252!4d-96.7723675!16s%2Fg%2F11b8yg36m_!3m5!1s0x864e9fc25838d3e1:0x24434360a57ca049!8m2!3d32.8813427!4d-96.7721315!16s%2Fg%2F11bv6pg4w7?entry=ttu",
-    appleMapsUrl: "https://maps.apple.com/?address=7949%20Walnut%20Hill%20Ln%20Suite%20125,%20Dallas,%20TX%2075230&auid=2756930637498498185&ll=32.881343,-96.772131&lsp=9902&q=18%7C8%20Fine%20Men%27s%20Salons%20-%20Preston%20Hollow%20Village",
+    appleMapsUrl: "https://maps.apple.com/?ll=32.881343,-96.772131&q=18|8+Preston+Hollow+Village",
   },
   phone: "2143052579",
   phoneFormatted: "(214) 305-2579",
