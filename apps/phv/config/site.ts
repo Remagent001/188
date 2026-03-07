@@ -9,7 +9,7 @@ const site: SiteConfig = {
     city: "Dallas",
     state: "TX",
     zip: "75230",
-    mapsUrl: "https://maps.google.com/?q=7949+Walnut+Hill+Lane+Suite+125+Dallas+TX+75230",
+    mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Preston+Hollow+Village/@32.8813427,-96.7721315,21z/data=!4m6!3m5!1s0x864e9fc25838d3e1:0x24434360a57ca049!8m2!3d32.8813427!4d-96.7721315",
   },
   phone: "2143052579",
   phoneFormatted: "(214) 305-2579",

@@ -12,7 +12,7 @@ const locations = [
     hours: "Mon–Fri 10AM–8PM · Sat 9AM–7PM · Sun 10AM–6PM",
     url: "https://eighteeneightwv.com",
     bookingUrl: "https://www.phorest.com/salon/eighteeneightfinemenssalons",
-    mapsUrl: "https://maps.google.com/?q=3699+McKinney+Ave+Dallas+TX+75204",
+    mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Dallas/@32.809337,-96.796878,20z/data=!4m6!3m5!1s0x864e9ed410184a6f:0x374c19c2117e17e8!8m2!3d32.809337!4d-96.796878",
     bg: "bg-[url('/images/wv-bg.jpg')]",
   },
   {
@@ -24,7 +24,7 @@ const locations = [
     hours: "Mon–Thu 10AM–8PM · Fri 10AM–7PM · Sat 9AM–7PM",
     url: "https://eighteeneightphv.com",
     bookingUrl: "https://www.phorest.com/salon/eighteeneightfinemenssalons1",
-    mapsUrl: "https://maps.google.com/?q=7949+Walnut+Hill+Lane+Dallas+TX+75230",
+    mapsUrl: "https://www.google.com/maps/place/18%2F8+Fine+Men's+Salons+-+Preston+Hollow+Village/@32.8813427,-96.7721315,21z/data=!4m6!3m5!1s0x864e9fc25838d3e1:0x24434360a57ca049!8m2!3d32.8813427!4d-96.7721315",
     bg: "bg-[url('/images/phv-bg.jpg')]",
   },
 ];
