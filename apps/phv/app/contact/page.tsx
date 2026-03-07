@@ -61,7 +61,7 @@ export default function ContactPage() {
       {/* Contact section with map and form */}
       <ContactSection
         site={site}
-        mapEmbedUrl="https://maps.google.com/maps?q=7949+Walnut+Hill+Lane+Dallas+TX+75230&output=embed"
+        mapEmbedUrl="https://maps.google.com/maps?q=18%2F8+Fine+Men's+Salons+Preston+Hollow+Village+Dallas+TX&output=embed"
       />
 
       {/* Booking CTA */}

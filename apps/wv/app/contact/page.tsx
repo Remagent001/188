@@ -60,7 +60,7 @@ export default function ContactPage() {
       {/* Contact section with map and form */}
       <ContactSection
         site={site}
-        mapEmbedUrl="https://maps.google.com/maps?q=3699+McKinney+Ave+Dallas+TX+75204&output=embed"
+        mapEmbedUrl="https://maps.google.com/maps?q=18%2F8+Fine+Men's+Salons+Dallas+3699+McKinney+Ave+Dallas+TX&output=embed"
       />
 
       {/* Booking CTA */}
