@@ -42,7 +42,7 @@ export function HeroSection({ site }: HeroSectionProps) {
               </a>
               <a
                 href="/services"
-                className="border border-[#212934]/50 hover:border-[#212934] text-[#212934] font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+                className="border border-[#212934]/50 hover:border-[#212934] text-[#212934] font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors bg-white/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
               >
                 Our Services
               </a>
