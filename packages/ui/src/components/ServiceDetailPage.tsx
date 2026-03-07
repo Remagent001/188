@@ -25,9 +25,9 @@ export function ServiceDetailPage({
       {/* Page header */}
       <section className="bg-[#111] pt-24 pb-10 px-4 border-b border-white/10">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Services</p>
           <h1 className="text-white text-4xl sm:text-5xl font-bold uppercase">{title}</h1>
-          <div className="w-16 h-px bg-[#c9a96e] mt-5" />
+          <div className="w-16 h-px bg-[#aa0000] mt-5" />
           {intro && (
             <p className="text-white/60 text-sm mt-5 max-w-2xl leading-relaxed">{intro}</p>
           )}
@@ -69,7 +69,7 @@ export function ServiceDetailPage({
       </section>
 
       {/* Booking CTA */}
-      <section className="bg-[#c9a96e] py-14 px-4 text-center">
+      <section className="bg-[#aa0000] py-14 px-4 text-center">
         <h2 className="text-black text-2xl sm:text-3xl font-bold mb-3">
           Ready to Book?
         </h2>

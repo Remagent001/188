@@ -37,9 +37,9 @@ export function ProductsGrid({ products }: ProductsGridProps) {
 
               {/* Text */}
               <div className="md:w-1/2 text-center md:text-left">
-                <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Featured Brand</p>
+                <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Featured Brand</p>
                 <h3 className="text-white text-2xl sm:text-3xl font-bold mb-4">{product.name}</h3>
-                <div className="w-10 h-px bg-[#c9a96e] mb-6 mx-auto md:mx-0" />
+                <div className="w-10 h-px bg-[#aa0000] mb-6 mx-auto md:mx-0" />
                 <p className="text-white/60 text-sm leading-relaxed">{product.description}</p>
               </div>
             </div>

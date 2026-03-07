@@ -6,40 +6,40 @@ interface HeroSectionProps {
 
 export function HeroSection({ site }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end bg-black overflow-hidden">
-      {/* Background photo */}
+    <section className="relative min-h-screen flex flex-col justify-end bg-black" style={{ clipPath: "inset(0)" }}>
+      {/* Background photo — fixed for parallax effect, clipped to hero only */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')", opacity: 0.4 }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')", opacity: 0.75 }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
 
       <div className="relative z-10 w-full px-8 sm:px-16 pb-20 sm:pb-28">
 
-        <h1 className="text-white text-5xl sm:text-7xl md:text-8xl font-bold uppercase leading-none mb-4"
+        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold uppercase leading-none mb-4"
           style={{ letterSpacing: "0.12em" }}>
           18|8 Fine Men's Salon
         </h1>
 
-        <p className="text-[#c9a96e] text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.25em" }}>
+        <p className="text-[#aa0000] text-xl sm:text-2xl italic" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.25em" }}>
           {site.locationName}
         </p>
 
-        <div className="w-16 h-px bg-[#c9a96e] my-8" />
+        <div className="w-16 h-px bg-[#aa0000] my-8" />
 
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="bg-[#aa0000] hover:bg-[#880000] text-black font-bold uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Book Your Appointment
           </a>
           <a
             href="/services"
-            className="border border-white/50 hover:border-[#c9a96e] text-white hover:text-[#c9a96e] font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors"
+            className="border border-white/50 hover:border-[#aa0000] text-white hover:text-[#aa0000] font-medium uppercase tracking-widest px-10 py-4 text-sm transition-colors"
           >
             Our Services
           </a>
@@ -47,19 +47,19 @@ export function HeroSection({ site }: HeroSectionProps) {
 
         {/* Address + phone pill */}
         <div className="mt-10 inline-flex items-center gap-3 border border-white/20 bg-black/30 backdrop-blur-sm px-5 py-3 text-white/70 text-xs">
-          <svg className="w-4 h-4 text-[#c9a96e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          <span>
-            {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}{" "}
-            &nbsp;&middot;&nbsp;{" "}
-            <a href={`tel:${site.phone}`} className="hover:text-[#c9a96e] transition-colors">
-              {site.phoneFormatted}
-            </a>
-          </span>
+          <a href={site.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-[#aa0000] transition-colors">
+            <svg className="w-4 h-4 text-[#aa0000] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            {site.address.street}{site.address.suite ? `, ${site.address.suite}` : ""}
+          </a>
+          <span>&middot;</span>
+          <a href={`tel:${site.phone}`} className="hover:text-[#aa0000] transition-colors">
+            {site.phoneFormatted}
+          </a>
         </div>
       </div>
 

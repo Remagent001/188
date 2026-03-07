@@ -35,7 +35,7 @@ export function Header({ site }: HeaderProps) {
       {/* Top bar */}
       <div className="bg-[#111] text-center text-xs text-[#9ca3af] py-1.5 tracking-wider uppercase">
         Open 7 Days a Week &nbsp;|&nbsp;{" "}
-        <a href={`tel:${site.phone}`} className="hover:text-[#c9a96e] transition-colors">
+        <a href={`tel:${site.phone}`} className="hover:text-[#aa0000] transition-colors">
           {site.phoneFormatted}
         </a>
       </div>
@@ -61,7 +61,7 @@ export function Header({ site }: HeaderProps) {
           >
             <a
               href="/services"
-              className="text-white/80 hover:text-[#c9a96e] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
+              className="text-white/80 hover:text-[#aa0000] uppercase tracking-wider text-xs font-medium transition-colors flex items-center gap-1"
             >
               Services
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ export function Header({ site }: HeaderProps) {
                   <a
                     key={s.href}
                     href={s.href}
-                    className="block px-4 py-2 text-xs text-white/70 hover:text-[#c9a96e] hover:bg-white/5 transition-colors"
+                    className="block px-4 py-2 text-xs text-white/70 hover:text-[#aa0000] hover:bg-white/5 transition-colors"
                   >
                     {s.label}
                   </a>
@@ -87,7 +87,7 @@ export function Header({ site }: HeaderProps) {
             <a
               key={link.href}
               href={link.href}
-              className="text-white/80 hover:text-[#c9a96e] uppercase tracking-wider text-xs font-medium transition-colors"
+              className="text-white/80 hover:text-[#aa0000] uppercase tracking-wider text-xs font-medium transition-colors"
             >
               {link.label}
             </a>
@@ -100,7 +100,7 @@ export function Header({ site }: HeaderProps) {
             href={site.booking.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
+            className="bg-[#aa0000] hover:bg-[#880000] text-black font-bold text-xs uppercase tracking-widest px-4 py-2.5 transition-colors"
           >
             Book Now
           </a>

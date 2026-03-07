@@ -23,16 +23,16 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
     <section className="bg-[#0a0a0a] py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Get In Touch</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Get In Touch</p>
           <h2 className="text-white text-3xl sm:text-4xl font-bold">Contact Us</h2>
-          <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+          <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-[#c9a96e] text-xs uppercase tracking-widest font-semibold mb-3">Address</h3>
+              <h3 className="text-[#aa0000] text-xs uppercase tracking-widest font-semibold mb-3">Address</h3>
               <a
                 href={site.address.mapsUrl}
                 target="_blank"
@@ -45,13 +45,13 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
               </a>
             </div>
             <div>
-              <h3 className="text-[#c9a96e] text-xs uppercase tracking-widest font-semibold mb-3">Phone</h3>
+              <h3 className="text-[#aa0000] text-xs uppercase tracking-widest font-semibold mb-3">Phone</h3>
               <a href={`tel:${site.phone}`} className="text-white/70 hover:text-white transition-colors text-sm">
                 {site.phoneFormatted}
               </a>
             </div>
             <div>
-              <h3 className="text-[#c9a96e] text-xs uppercase tracking-widest font-semibold mb-3">Hours</h3>
+              <h3 className="text-[#aa0000] text-xs uppercase tracking-widest font-semibold mb-3">Hours</h3>
               <ul className="space-y-2">
                 {site.hours.map((h) => (
                   <li key={h.label} className="flex justify-between max-w-xs text-sm">
@@ -87,7 +87,7 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
           <div>
             <h3 className="text-white font-semibold mb-6">Send Us a Message</h3>
             {submitted ? (
-              <div className="bg-[#c9a96e]/10 border border-[#c9a96e]/30 p-6 text-[#c9a96e] text-sm">
+              <div className="bg-[#aa0000]/10 border border-[#aa0000]/30 p-6 text-[#aa0000] text-sm">
                 Thank you for your message! We'll get back to you soon.
               </div>
             ) : (
@@ -101,7 +101,7 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -114,7 +114,7 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -127,13 +127,13 @@ export function ContactSection({ site, mapEmbedUrl }: ContactSectionProps) {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors resize-none"
+                    className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors resize-none"
                     placeholder="How can we help you?"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
+                  className="w-full bg-[#aa0000] hover:bg-[#880000] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
                 >
                   Send Message
                 </button>

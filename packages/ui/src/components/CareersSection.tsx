@@ -30,9 +30,9 @@ export function CareersSection() {
     <section className="bg-[#0a0a0a] py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Join the Team</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Join the Team</p>
           <h2 className="text-white text-3xl sm:text-4xl font-bold">Careers at 18|8</h2>
-          <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+          <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
           <p className="text-white/50 text-sm mt-6 max-w-xl mx-auto">
             Want to walk into a positive and exciting work environment, help people be their best,
             and build a rewarding career? We're looking for fashion-forward, energetic, charismatic
@@ -46,7 +46,7 @@ export function CareersSection() {
             onClick={() => { setActiveRole("stylist"); setSubmitted(false); }}
             className={`px-6 py-3 text-xs uppercase tracking-widest font-semibold transition-colors border-b-2 -mb-px ${
               activeRole === "stylist"
-                ? "border-[#c9a96e] text-[#c9a96e]"
+                ? "border-[#aa0000] text-[#aa0000]"
                 : "border-transparent text-white/40 hover:text-white"
             }`}
           >
@@ -56,7 +56,7 @@ export function CareersSection() {
             onClick={() => { setActiveRole("frontdesk"); setSubmitted(false); }}
             className={`px-6 py-3 text-xs uppercase tracking-widest font-semibold transition-colors border-b-2 -mb-px ${
               activeRole === "frontdesk"
-                ? "border-[#c9a96e] text-[#c9a96e]"
+                ? "border-[#aa0000] text-[#aa0000]"
                 : "border-transparent text-white/40 hover:text-white"
             }`}
           >
@@ -65,7 +65,7 @@ export function CareersSection() {
         </div>
 
         {submitted ? (
-          <div className="bg-[#c9a96e]/10 border border-[#c9a96e]/30 p-8 text-center text-[#c9a96e]">
+          <div className="bg-[#aa0000]/10 border border-[#aa0000]/30 p-8 text-center text-[#aa0000]">
             <p className="font-semibold text-lg mb-2">Application Received!</p>
             <p className="text-sm">Thank you for your interest in joining 18|8. We'll be in touch soon.</p>
           </div>
@@ -97,7 +97,7 @@ export function CareersSection() {
                         placeholder={placeholder}
                         value={stylistForm[key as keyof typeof stylistForm]}
                         onChange={(e) => setStylistForm({ ...stylistForm, [key]: e.target.value })}
-                        className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                        className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                       />
                     </div>
                   ))}
@@ -109,7 +109,7 @@ export function CareersSection() {
                       required
                       value={stylistForm.licensed}
                       onChange={(e) => setStylistForm({ ...stylistForm, licensed: e.target.value })}
-                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     >
                       <option value="">Select...</option>
                       <option value="yes-cosmetologist">Yes, Licensed Cosmetologist</option>
@@ -126,7 +126,7 @@ export function CareersSection() {
                       required
                       value={stylistForm.twoYearsExp}
                       onChange={(e) => setStylistForm({ ...stylistForm, twoYearsExp: e.target.value })}
-                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     >
                       <option value="">Select...</option>
                       <option value="yes">Yes</option>
@@ -141,13 +141,13 @@ export function CareersSection() {
                       rows={4}
                       value={stylistForm.experience}
                       onChange={(e) => setStylistForm({ ...stylistForm, experience: e.target.value })}
-                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors resize-none"
+                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors resize-none"
                       placeholder="Tell us about your experience..."
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
+                    className="w-full bg-[#aa0000] hover:bg-[#880000] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
                   >
                     Submit Application
                   </button>
@@ -181,7 +181,7 @@ export function CareersSection() {
                         placeholder={placeholder}
                         value={frontDeskForm[key as keyof typeof frontDeskForm]}
                         onChange={(e) => setFrontDeskForm({ ...frontDeskForm, [key]: e.target.value })}
-                        className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                        className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                       />
                     </div>
                   ))}
@@ -193,7 +193,7 @@ export function CareersSection() {
                       required
                       value={frontDeskForm.salonExp}
                       onChange={(e) => setFrontDeskForm({ ...frontDeskForm, salonExp: e.target.value })}
-                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors"
+                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors"
                     >
                       <option value="">Select...</option>
                       <option value="yes">Yes</option>
@@ -208,13 +208,13 @@ export function CareersSection() {
                       rows={4}
                       value={frontDeskForm.experience}
                       onChange={(e) => setFrontDeskForm({ ...frontDeskForm, experience: e.target.value })}
-                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#c9a96e] transition-colors resize-none"
+                      className="w-full bg-[#141414] border border-white/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-[#aa0000] transition-colors resize-none"
                       placeholder="Tell us about yourself..."
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
+                    className="w-full bg-[#aa0000] hover:bg-[#880000] text-black font-bold uppercase tracking-widest py-4 text-sm transition-colors"
                   >
                     Submit Application
                   </button>

@@ -16,7 +16,7 @@ function Stars({ rating }: { rating: number }) {
       {[1, 2, 3, 4, 5].map((i) => (
         <svg
           key={i}
-          className={`w-4 h-4 ${i <= rating ? "text-[#c9a96e]" : "text-white/20"}`}
+          className={`w-4 h-4 ${i <= rating ? "text-[#aa0000]" : "text-white/20"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -32,9 +32,9 @@ export function ReviewsSection({ reviews, locationName }: ReviewsSectionProps) {
     <section className="bg-black py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">Client Reviews</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">Client Reviews</p>
           <h2 className="text-white text-3xl sm:text-4xl font-bold">What Our Clients Say</h2>
-          <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+          <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
           <p className="text-white/50 text-sm mt-4">About 18|8 {locationName}</p>
         </div>
 

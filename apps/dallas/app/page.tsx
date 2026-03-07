@@ -11,6 +11,7 @@ const locations = [
     phone: "(214) 305-2079",
     hours: "Mon–Fri 10AM–8PM · Sat 9AM–7PM · Sun 10AM–6PM",
     url: "https://eighteeneightwv.com",
+    bookingUrl: "https://www.phorest.com/salon/eighteeneightfinemenssalons",
     mapsUrl: "https://maps.google.com/?q=3699+McKinney+Ave+Dallas+TX+75204",
     bg: "bg-[url('/images/wv-bg.jpg')]",
   },
@@ -22,6 +23,7 @@ const locations = [
     phone: "(214) 305-2579",
     hours: "Mon–Thu 10AM–8PM · Fri 10AM–7PM · Sat 9AM–7PM",
     url: "https://eighteeneightphv.com",
+    bookingUrl: "https://www.phorest.com/salon/eighteeneightfinemenssalons1",
     mapsUrl: "https://maps.google.com/?q=7949+Walnut+Hill+Lane+Dallas+TX+75230",
     bg: "bg-[url('/images/phv-bg.jpg')]",
   },
@@ -34,13 +36,8 @@ export default function DallasSelector() {
     <div className="min-h-screen bg-black flex flex-col">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center py-5 bg-gradient-to-b from-black to-transparent">
-        <a href="https://eighteeneight.com" className="flex items-center gap-2">
-          <span className="text-white font-bold text-3xl tracking-tight">
-            18<span className="text-[#c9a96e]">|</span>8
-          </span>
-          <span className="text-white/50 text-xs uppercase tracking-widest leading-tight">
-            Fine Men's<br />Salon
-          </span>
+        <a href="https://eighteeneight.com">
+          <img src="/images/logo.gif" alt="18|8 Fine Men's Salon" className="h-14 rounded" />
         </a>
       </header>
 
@@ -80,21 +77,30 @@ export default function DallasSelector() {
 
             {/* Content */}
             <div className="relative z-10 max-w-sm">
-              <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3 font-medium">
+              <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3 font-medium">
                 Dallas, TX
               </p>
               <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-4">
-                18<span className="text-[#c9a96e]">|</span>8<br />
+                18<span className="text-[#aa0000]">|</span>8<br />
                 {loc.name}
               </h2>
-              <div className="w-10 h-px bg-[#c9a96e] mb-5" />
+              <div className="w-10 h-px bg-[#aa0000] mb-5" />
               <p className="text-white/60 text-sm mb-1">{loc.address}</p>
               <p className="text-white/60 text-sm mb-4">{loc.city}</p>
               <p className="text-white/40 text-xs mb-1">{loc.phone}</p>
               <p className="text-white/40 text-xs mb-8">{loc.hours}</p>
 
-              <div className="flex gap-3">
-                <span className="inline-flex items-center gap-2 bg-[#c9a96e] hover:bg-[#b8924f] text-black font-bold text-xs uppercase tracking-widest px-5 py-3 transition-colors">
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={loc.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-2 bg-[#aa0000] hover:bg-[#880000] text-white font-bold text-xs uppercase tracking-widest px-5 py-3 transition-colors"
+                >
+                  Book Now for {loc.name}
+                </a>
+                <span className="inline-flex items-center gap-2 border border-white/20 hover:border-[#aa0000] text-white/60 hover:text-[#aa0000] font-bold text-xs uppercase tracking-widest px-5 py-3 transition-colors">
                   Visit This Location
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -105,7 +111,7 @@ export default function DallasSelector() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-1 border border-white/20 hover:border-[#c9a96e] text-white/60 hover:text-[#c9a96e] text-xs uppercase tracking-widest px-4 py-3 transition-colors"
+                  className="inline-flex items-center gap-1 border border-white/20 hover:border-[#aa0000] text-white/60 hover:text-[#aa0000] text-xs uppercase tracking-widest px-4 py-3 transition-colors"
                 >
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -130,7 +136,7 @@ export default function DallasSelector() {
       {/* Footer */}
       <footer className="relative z-10 text-center py-4 text-white/20 text-xs border-t border-white/10 bg-black">
         © {new Date().getFullYear()} 18|8 Fine Men's Salon Dallas &nbsp;·&nbsp;{" "}
-        <a href="https://eighteeneight.com" className="hover:text-[#c9a96e] transition-colors">
+        <a href="https://eighteeneight.com" className="hover:text-[#aa0000] transition-colors">
           eighteeneight.com
         </a>
       </footer>

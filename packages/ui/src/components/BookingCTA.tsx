@@ -12,7 +12,7 @@ export function BookingCTA({
   subtext = "Book your appointment online — it only takes a minute.",
 }: BookingCTAProps) {
   return (
-    <section className="bg-[#c9a96e] py-16 px-4 text-center">
+    <section className="bg-[#aa0000] py-16 px-4 text-center">
       <h2 className="text-black text-3xl sm:text-4xl font-bold mb-3">{heading}</h2>
       <p className="text-black/70 mb-8 text-sm max-w-md mx-auto">{subtext}</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">

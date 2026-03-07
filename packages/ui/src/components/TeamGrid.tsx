@@ -58,7 +58,7 @@ function DesktopCard({ member }: { member: TeamMember }) {
 
           {/* Back — bio */}
           <div
-            className="absolute inset-0 bg-[#c9a96e] flex flex-col items-center justify-center p-5"
+            className="absolute inset-0 bg-[#aa0000] flex flex-col items-center justify-center p-5"
             style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
           >
             <p className="text-black/80 text-xs leading-relaxed text-center">
@@ -68,7 +68,7 @@ function DesktopCard({ member }: { member: TeamMember }) {
         </div>
       </div>
       <h3 className="text-white font-semibold text-sm">{member.name}</h3>
-      <p className="text-[#c9a96e] text-xs uppercase tracking-wider mt-1">{member.title}</p>
+      <p className="text-[#aa0000] text-xs uppercase tracking-wider mt-1">{member.title}</p>
     </div>
   );
 }
@@ -99,7 +99,7 @@ function MobileCard({ member }: { member: TeamMember }) {
         )}
       </div>
       <h3 className="text-white font-semibold text-sm">{member.name}</h3>
-      <p className="text-[#c9a96e] text-xs uppercase tracking-wider mt-1">{member.title}</p>
+      <p className="text-[#aa0000] text-xs uppercase tracking-wider mt-1">{member.title}</p>
       {hasBio && expanded && (
         <p className="text-white/60 text-sm leading-relaxed mt-3 text-left">
           {member.bio}
@@ -114,9 +114,9 @@ export function TeamGrid({ members }: TeamGridProps) {
     <section className="bg-black py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#c9a96e] text-xs uppercase tracking-[0.4em] mb-3">The Team</p>
+          <p className="text-[#aa0000] text-xs uppercase tracking-[0.4em] mb-3">The Team</p>
           <h2 className="text-white text-3xl sm:text-4xl font-bold">Meet Your Stylists</h2>
-          <div className="w-12 h-px bg-[#c9a96e] mx-auto mt-5" />
+          <div className="w-12 h-px bg-[#aa0000] mx-auto mt-5" />
         </div>
 
         {/* Mobile: 1 column, tap to expand */}
